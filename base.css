@@ -1,1 +1,23 @@
 body { margin: 0; }
+:root {
+  --color-primary: lightskyblue;
+  --color-secondary: white;
+  --color-text-on-primary: white;
+  --color-text-on-secondary: black;
+  --font-primary: Times New Roman, Georgia, serif;
+    }
+
+body {
+  font-family: var(--font-primary);
+}
+
+.authentification__panneau-marque {
+  background-color: var(--color-primary);
+  color: var(--color-text-on-primary);
+}
+
+button {
+  background-color: var(--color-primary);
+  color: var(--color-text-on-primary);
+}
+
