@@ -1,0 +1,99 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+}
+
+
+.contenant {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.partie-gauche {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-right: 2px solid #f0f0f0;
+}
+
+.formulaire {
+    width: 100%;
+    max-width: 420px;
+    padding: 40px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+
+.champ {
+    margin-bottom: 20px;
+}
+
+.champ label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #444;
+}
+
+.champ input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.champ input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.partie-droite {
+    flex: 1;
+    background: linear-gradient(135deg, #007bff, #00aaff);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.partie-droite h2 {
+    font-size: 3.8rem;
+    font-weight: bold;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
