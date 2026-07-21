@@ -1,0 +1,65 @@
+body { margin: 0; }
+:root {
+  --color-primary: lightskyblue;
+  --color-secondary: white;
+  --color-text-on-primary: white;
+  --color-text-on-secondary: black;
+  --font-primary: Times New Roman, Georgia, serif;
+    }
+
+body {
+  font-family: var(--font-primary);
+}
+
+.authentification {
+  display: flex;
+}
+
+
+.authentification__panneau-marque {
+  flex: 1;
+  background-color: var(--color-primary);
+  color: var(--color-text-on-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: var(--color-primary);
+  color: var(--color-text-on-primary);
+}
+
+.authentification__panneau-formulaire {
+  flex: 1;
+  padding:40px;
+}
+.authentification__champ {
+  margin-bottom:15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.authentification__champ input {
+  width: 100%;
+}
+
+button {
+  background-color: var(--color-primary);
+  color: var(--color-text-on-primary);
+  border: none;
+  padding: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.authentification__logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  background-color: white;
+  margin-top: 20px;
+}

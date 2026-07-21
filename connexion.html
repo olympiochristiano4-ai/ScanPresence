@@ -1,24 +1,47 @@
-<!doctype html>
-<html>
-  <head lang="fr">
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Page de connexion">
-    <title>ScanPresence | Connectez-vous</title>
-  </head>
-  <body>
-    <form action="connection.php" method="post">
-      <fieldset>
-        <legend style="color:#00e2ff;">Connectez-vous</legend>
-        <label for="matricule">Matricule:</label><br>
-        <input type="text" id="matricule" name="matricule"><br>
-        <label for="motdepasse">Mot de passe:</label><br>
-        <input type="password" id="motdepasse" name="motdepasse"><br>
-        <br>
-        <button type="submit">Se connecter</button>
-      </fieldset>
-    </form>
+    <title> ScanPresence | Connexion </title>
+    
+    <link rel="stylesheet" href="connexion.css">
+</head>
+<body>
 
-    <p>Vous n'avez pas de compte? <a href="inscription.html">Inscrivez-vous</a></p>
-  </body>
+    <div class="contenant">
+        
+        <div class="partie-gauche">
+            
+            <div class="formulaire">
+                <h1>Connexion</h1>
+
+                <form>
+                    <div class="champ">
+                        <label for="email"> Email: </label><br>
+                        <input type="email" id="email" name="email" required><br>
+                    </div>
+
+                    <div class="champ">
+                        <label for="password">Mot de passe:</label><br>
+                        <input type="password" id="password" name="password" required><br>
+                    </div>
+
+                    <button type="submit">Se connecter</button><br>
+                </form>
+
+                <p>Vous n'avez pas de compte? <a href="inscription.html">Inscrivez-vous</a></p>
+            </div>
+            
+        </div>
+
+        
+        <div class="partie-droite">
+            <h2> ScanPresence </h2>
+            
+        </div>
+
+    </div>
+
+</body>
 </html>
